@@ -1,0 +1,30 @@
+p(typeof(true)) // 'boolean'
+p(typeof(false)) // 'boolean'
+
+p(typeof(null)) // 'null'
+
+p(typeof(font-size)) // 'ident'
+p(typeof("Helvetica")) // 'string'
+
+p(typeof(0)) // 'unit'
+p(unit(0)) // ''
+
+p(typeof(1in)) // 'unit'
+p(unit(1in)) // 'in'
+
+p(typeof(50%)) // 'unit'
+p(unit(50%)) // '%'
+
+p(typeof(#FA8072)) // 'rgba'
+
+p(typeof(typeof)) // 'function'
+
+p(typeof(url("./style.css"))) // 'call'
+
+p(typeof(1em 2em 3em 4em)) // 'unit'
+p(typeof(1em, 2em, 3em, 4em)) // 'unit'
+p(typeof(1em, 2em, 3em, 4em)) // 'unit'
+p(typeof(thin solid black)) // 'ident'
+p(typeof('thin', 'solid', 'black')) // 'string'
+
+p(typeof({small: 320px, medium: 640px, large: 1024px})) // 'object'

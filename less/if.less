@@ -1,0 +1,12 @@
+.set-colors(@bg) {
+  background-color: @bg;
+  color: if(lightness(@bg) =< 50%, white, black)
+}
+
+td {
+  .set-colors(lavender);
+}
+
+th {
+  .set-colors(indigo);
+}

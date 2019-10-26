@@ -1,0 +1,5 @@
+random-cat(width, height = width)
+  url(s("http://placekitten.com/%d/%d" % (width height)))
+
+div.cat
+  background-image random-cat(200)

@@ -1,0 +1,41 @@
+p(1in > 2cm) // true
+p(1in == 2.54cm) // true
+p(1in is 2.54cm) // true
+
+p(1in - 2.54cm) // 0in
+p(2.54cm - 1in) // 0cm
+p(2in + 1) // 3in
+p(4px + 1in)  // 4px
+p(1in + 4px)  // 4in
+p(2px * 3) // 6px
+p(15px / 3) // 5px
+p(15px / 3px) // 5px
+
+p(not true) // false
+p(! true) // false
+p(true and false) // false
+p(true && false) // false
+p(true or false) // true
+p(true || false) // true
+
+p(1px is a 'string') // false
+p(1px is a 'unit') // true
+p('Helvetica' is a 'string') // true
+
+p((1 + 2)px) // 3px
+
+p("Length: " + 1in)
+p("2in + 1 = %s" % (2in + 1))
+
+list = 'one' 'two' 'three'
+p('two' in list)
+p(list[0]) // 'one'
+p(list[1]) // 'two'
+p(list[2]) // 'three'
+p(list[-1]) // 'three'
+p(list[-2]) // 'two'
+p(list[-3]) // 'one'
+
+hash = {small: 320px, medium: 640px, large: 1024px}
+p(hash.medium) // 640px
+p(hash[medium]) // 640px

@@ -1,0 +1,16 @@
+@mixin set-colors($bg) {
+  background-color: $bg;
+  @if lightness($bg) <= 50% {
+    color: white;
+  } @else {
+    color: black;
+  }
+}
+
+td {
+  @include set-colors(lavender);
+}
+
+th {
+  @include set-colors(indigo);
+}

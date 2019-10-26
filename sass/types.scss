@@ -1,0 +1,31 @@
+@debug type_of(true); // "bool"
+@debug type_of(false); // "bool"
+
+@debug type_of(null); // "null"
+
+@debug type_of(font-size); // "string"
+@debug type_of("Helvetica"); // "string"
+
+@debug type_of(0); // "number"
+@debug unitless(0); // true
+@debug unit(0); // ""
+
+@debug type_of(1in); // "number"
+@debug unitless(1in); // false
+@debug unit(1in); // "in"
+
+@debug type_of(50%); // "number"
+@debug unitless(50%); // false
+@debug unit(50%); // "%"
+
+@debug type_of(#FA8072); // "color"
+
+@debug type_of(get-function("type_of")); // "function"
+
+@debug type_of(1em 2em 3em 4em); // "list"
+@debug type_of((1em, 2em, 3em, 4em)); // "list"
+@debug type_of([1em 2em 3em 4em]); // "list"
+@debug type_of([1em, 2em, 3em, 4em]); // "list"
+@debug type_of(()); // "list"
+
+@debug type_of((small: 320px, medium: 640px, large: 1024px)); // "map"

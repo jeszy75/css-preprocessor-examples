@@ -1,0 +1,7 @@
+@function random-cat($width, $height: $width) {
+  @return url("http://placekitten.com/#{$width}/#{$height}")
+}
+
+div.cat {
+  background-image: random-cat(200);
+}

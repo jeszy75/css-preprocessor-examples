@@ -1,0 +1,12 @@
+.type-tests {
+  1: iskeyword(font-size); // true
+  2: isstring("Helvetica"); // true
+  3: isnumber(0); // true
+  4: isnumber(1in); // true
+  5: isnumber(50%); // true
+  6: ispixel(0px); // true
+  7: ispercentage(50%); // true
+  8: iscolor(red); // true
+  9: iscolor(#FA8072); // true
+  10: isurl(url("./style.css")); // true
+}

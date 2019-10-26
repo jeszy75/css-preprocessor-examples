@@ -1,0 +1,12 @@
+table.group-1 {
+  width: 50%;
+}
+
+.generate-rules(@n, @i: 2) when (@i =< @n) {
+  table.group-@{i} {
+    &:extend(table.group-1);
+  }
+  .generate-rules(@n, @i + 1);
+}
+
+.generate-rules(5);

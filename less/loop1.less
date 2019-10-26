@@ -1,0 +1,8 @@
+.generate-rules(@n, @i: 1) when (@i =< @n) {
+  div.group-@{i} {
+    width: 50%;
+  }
+  .generate-rules(@n, @i + 1);
+}
+
+.generate-rules(5);

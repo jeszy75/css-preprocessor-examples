@@ -1,0 +1,19 @@
+.set-colors(@bg) {
+  background-color: @bg;
+}
+
+.set-colors(@bg) when (lightness(@bg) =< 50%) {
+  color: white;
+}
+
+.set-colors(@bg) when (lightness(@bg) > 50%) {
+  color: black;
+}
+
+td {
+  .set-colors(lavender);
+}
+
+th {
+  .set-colors(indigo);
+}

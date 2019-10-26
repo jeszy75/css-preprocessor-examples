@@ -1,0 +1,11 @@
+// Requires Less v3.7.0 or later
+
+div.group-a {
+  width: 50%;
+}
+
+each(b, c, d, e; {
+  div.group-@{value} {
+    &:extend(div.group-a);
+  }
+})
