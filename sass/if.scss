@@ -1,6 +1,8 @@
+@use "sass:color";
+
 @mixin set-colors($bg) {
   background-color: $bg;
-  @if lightness($bg) <= 50% {
+  @if color.channel($bg, "lightness", $space: hsl) <= 50% {
     color: white;
   } @else {
     color: black;

@@ -1,6 +1,8 @@
+@use "sass:meta";
+
 @mixin value-check($value, $type) {
-  @if type_of($value) != $type {
-    @error "Invalid argument: expected a #{$type}, got a #{type_of($value)}"
+  @if meta.type_of($value) != $type {
+    @error "Invalid argument: expected a #{$type}, got a #{meta.type_of($value)}"
   }
 }
 
