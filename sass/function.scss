@@ -1,5 +1,5 @@
 @function random-cat($width, $height: $width) {
-  @return url("http://placekitten.com/#{$width}/#{$height}")
+  @return url("https://placecats.com/#{$width}/#{$height}")
 }
 
 div.cat {
