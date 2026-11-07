@@ -1,13 +1,14 @@
-table.highscore {
-  & > thead > tr {
-    background-color: darkslateblue;
+div.foo {
+  > div.bar {
+    background-color: red;
   }
-  & > tbody {
-    & > tr:nth-child(odd) {
-      background-color: powderblue;
-    }
-    & > tr:nth-child(even) {
-      background-color: aliceblue;
-    }
+  > div.baz {
+    background-color: green;
+  }
+  & > & {
+    background-color: blue;
+  }
+  &:hover {
+    font-weight: bold;
   }
 }
